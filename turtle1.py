@@ -1,0 +1,188 @@
+import turtle
+from turtle import *
+t=turtle.Turtle()
+screen=turtle.Screen()
+screen.bgcolor("black")
+t.color("yellow","green")
+t.begin_fill()
+t.circle(80)
+t.end_fill()
+t.ht()
+t.speed(0)
+t.pu()
+t.color("yellow","yellow")
+t.begin_fill()
+t.circle(30)
+t.end_fill()
+t.ht()
+t.pd()
+t.speed(0)
+l=["red","blue","pink","yellow"]
+for i in range(30):
+    t.color(l[i%4])
+    t.begin_fill()
+    t.forward(20+i)
+    t.pensize(3)
+    t.rt(28)
+    t.ht()
+    t.forward(30-i)
+    t.speed(0)
+    t.clone()
+    t.circle(10)
+    t.end_fill()
+ 
+color('red', 'yellow')
+begin_fill()
+while True:
+    
+    forward(200)
+    left(170)
+    speed(0)
+    pensize(3)
+    if abs(pos()) <1:
+        break
+end_fill()
+import turtle
+t = turtle.Turtle()      #instantiate a new turtle object called 'a'
+t.hideturtle()           #make the turtle invisible
+t.penup()                #don't draw when turtle moves
+t.goto(-200, -200)       #move the turtle to a location
+t.showturtle()
+l=["black","black","red","black","white"]
+for i in range(17):
+    t.color(l[i%5])
+    t.begin_fill()
+    t.circle(i+1)
+    t.forward(i+0.5)
+    t.pensize(2)
+    t.left(45)
+    t.ht()
+    t.speed(100)
+    t.clone()
+    t.end_fill()
+
+    #make the turtle visible
+t.pendown()              #draw when the turtle moves              
+t.reset()
+
+color('violet', 'pink')
+begin_fill()
+while True:
+    
+    forward(200)
+    left(170)
+    speed(0)
+    pensize(3)
+    if abs(pos()) <1:
+        break
+end_fill()
+
+
+t.reset()
+from turtle import *
+import random
+
+for n in range(5):
+    penup()
+    speed(0)
+    goto(random.randint(-400, 400), random.randint(-400, 400))
+    pendown()
+
+    red_amount   = random.randint( 0,  30) / 100.0
+    blue_amount  = random.randint(50, 100) / 100.0
+    green_amount = random.randint( 0,  30) / 100.0
+    pencolor((red_amount, green_amount, blue_amount))
+
+    circle_size = random.randint(10,23)
+    pensize(random.randint(1, 3))
+
+    for i in range(6):
+        circle(circle_size)
+        left(60)
+
+from turtle import *
+import random
+
+for n in range(5):
+    penup()
+    speed(0)
+    goto(random.randint(-400, 400), random.randint(-400, 400))
+    pendown()
+
+    red_amount   = random.randint( 0,  30) / 100.0
+    blue_amount  = random.randint(50, 100) / 100.0
+    green_amount = random.randint( 0,  30) / 100.0
+    pencolor((blue_amount, red_amount, green_amount))
+
+    circle_size = random.randint(10, 15)
+    pensize(random.randint(1, 3))
+
+    for i in range(6):
+        circle(circle_size)
+        left(69)
+from turtle import *
+import random
+
+for n in range(5):
+    penup()
+    speed(0)
+    goto(random.randint(-400, 400), random.randint(-400, 400))
+    pendown()
+
+    red_amount   = random.randint( 0,  30) / 100.0
+    blue_amount  = random.randint(50, 100) / 100.0
+    green_amount = random.randint( 0,  30) / 100.0
+    pencolor((green_amount, red_amount, blue_amount))
+
+    circle_size = random.randint(10, 15)
+    pensize(random.randint(1, 3))
+
+    for i in range(6):
+        circle(circle_size)
+        left(70)
+turtle.reset()        
+
+import turtle
+t=turtle.Turtle()
+screen=turtle.Screen()
+screen.bgcolor("red")
+t.up()
+t.goto(0,-100)
+t.down()
+t.begin_fill()
+t.fillcolor("yellow")
+t.circle(100)
+t.end_fill()
+t.up()
+t.goto(-67,-40)
+t.setheading(-60)
+t.width(5)
+t.down()
+t.speed(0)
+t.circle(80,120)
+t.fillcolor("black")
+for i in range(-35,105,70):
+    t.up()
+    t.goto(i,35)
+    t.setheading(0)
+    t.down()
+    t.begin_fill()
+    t.circle(10)
+    t.end_fill()
+
+t.hideturtle()
+
+import turtle
+t=turtle.Turtle()
+t.color("purple")
+t.pensize(4)
+style=('Courier',45,'bold')
+t.write('wash hands\ncover mouth\nstay at home\n\nxCORONAx',font=style,align='left')
+t.ht()
+
+
+
+
+
+
+
